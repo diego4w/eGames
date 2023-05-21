@@ -4,87 +4,92 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-dark" style="background: rgb(19,0,14);
-background: linear-gradient(90deg, rgba(19,0,14,1) 0%, rgba(28,4,9,1) 35%, rgba(69,3,28,1) 100%);">
-<div>
-    <div>
-        <div>
-            <h1 class="display-1 text-danger">UNIFUCAMP GAMING ARENA</h1>
-            <p class="m-5 text-danger fs-1">
-               PRIMEIRO CAMPEONATO
-            </p>
-            <p class="m-5 text-white">
-                LEAGUE OF LEGENDS
-            </p>
-        </div>
+<body class="bg-color">
+    <div class="text-center text-white p-3">
+        <h1>UNIFUCAMP GAMING ARENA</h1>
+        <p class="mt-3 fs-5">A Unifucamp Gaming Arena 2023 será um evento realizado pelo curso de Ciências da Computação da UNIFUCAMP. Este será o primeiro campeonato premiado de jogos eletrônicos a ser realizado em Monte Carmelo, MG, oferecendo aos jogadores uma oportunidade de competir entre escolas e mostrar suas habilidades no League of Legends, um dos jogos mais populares do mundo.</p>
     </div>
-    <div>
-            <div>
-                <h1 class="m-3 text-danger">DATA DE INICIO</h1>
-                <p class="m-3 text-white fs-5"><i class="bi bi-alarm"></i> 5 maio, 18:00</p>
-                <h1 class="m-3 text-danger">PREMIAÇAO</h1>
-                <p class="m-3 text-white fs-5"><i class="bi bi-award"></i> 4035 RP para cada integrante do time</p>
+        <div id="form" class="p-3 mt-3" >
+            <h1 class="text-center text-danger">CADASTRE SEU TIME</h1>
+            <div class="d-flex align-items-center justify-content-center">
+                <button type="button" id="form" class="btn btn-danger me-3 mt-3"><i class="bi bi-card-checklist"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLTxtLDZXZAB3uj772V5X76oW2bWf1eaUHEd2n89hBDRyeQQ/viewform?usp=sf_link"  style="text-decoration: none; color: white;">FORMULARIO</a></button>
+                <button type="button" class="btn btn-danger mt-3 me-3" ><i class="bi bi-journal-text"></i> <a href="regulamento/unifucamp gaming arena regulamento (1) (1).docx" download="regulamento" style="text-decoration: none; color: white;">VER REGRAS</a></button>
+                <button type="button" class="btn btn-danger mt-3" ><i class="bi bi-journal-text"></i> <a href="regulamento/regras league of legends.docx" download="regulamento" style="text-decoration: none; color: white;">VER REGRAS DO LOL</a></button>
             </div>
             <div>
-                <h1 class="text-center text-danger">CADASTRE SEU TIME</h1>
-                <div class="d-flex align-items-center justify-content-center">
-                    <button type="button" id="form" class="btn btn-danger me-3 mt-3"><i class="bi bi-card-checklist"></i> <a href="https://docs.google.com/forms/d/e/1FAIpQLSfLTxtLDZXZAB3uj772V5X76oW2bWf1eaUHEd2n89hBDRyeQQ/viewform?usp=sf_link"  style="text-decoration: none; color: white;">FORMULARIO</a></button>
-                    <button type="button" class="btn btn-danger mt-3 me-3" ><i class="bi bi-journal-text"></i> <a href="regulamento/unifucamp gaming arena regulamento (1).docx" download="regulamento" style="text-decoration: none; color: white;">VER REGRAS</a></button>
-                    <button type="button" class="btn btn-danger mt-3" ><i class="bi bi-journal-text"></i> <a href="regulamento/regras league of legends.docx" download="regulamento" style="text-decoration: none; color: white;">VER REGRAS DO LOL</a></button>
+                <h1 class="text-danger text-center mt-5">A INSCRIÇAO SE ENCERRA EM</h1>
+                <div id="countdown" class="text-white d-flex align-items-center justify-content-center mt-3">
+                    <div class="p-3 rounded bg-danger">
+                        <span id="dias" class="d-inline"></span>
+                        <div class="d-inline">Dias</div>
+                    </div>
+                    <div class="me-3 ms-3 p-3 rounded bg-danger">
+                        <span id="horas" class="d-inline"></span>
+                        <div class="d-inline">Horas</div>
+                    </div>
+                    <div class="me-3 p-3 rounded bg-danger">
+                        <span id="minutos" class="d-inline"></span>
+                        <div class="d-inline">Minutos</div>
+                    </div>
+                    <div  class="p-3 rounded bg-danger">
+                        <span id="segundos" class="d-inline"></span>
+                        <div class="d-inline">segundos</div>
+                    </div>
                 </div>
-            </div>
-        <h1 class="text-danger text-center mt-5">A INSCRIÇAO SE ENCERRA EM</h1>
-        <div id="countdown" class="text-white d-flex align-items-center justify-content-center mt-5">
-            <div class="p-3 rounded bg-danger">
-                <span id="dias" class="d-inline"></span>
-                <div class="d-inline">Dias</div>
-            </div>
-            <div class="me-3 ms-3 p-3 rounded bg-danger">
-                <span id="horas" class="d-inline"></span>
-                <div class="d-inline">Horas</div>
-            </div>
-            <div class="me-3 p-3 rounded bg-danger">
-                <span id="minutos" class="d-inline"></span>
-                <div class="d-inline">Minutos</div>
-            </div>
-            <div  class="p-3 rounded bg-danger">
-                <span id="segundos" class="d-inline"></span>
-                <div class="d-inline">segundos</div>
+                <p class="text-center mt-3" style="color: rgb(160, 160, 168);">*Finalize sua inscricao levando 1L de oleo para a UNIFUCAMP</p>
             </div>
         </div>
-        <div class="card bg-dark  text-white mt-5">
-            <div class="card-header">
-              Sobre
+<!--
+        <div class="d-flex justify-content-center align-items-center mt-5">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" style="width: 80%;">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assets/desing.jpg" class="d-block w-100" alt="assets/lolHeroi.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/desing.jpg" class="d-block w-100" alt="assets/desing.jpg">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assets/desing.jpg" class="d-block w-100" alt="assets/desing.jpg">
+                  </div>
+                </div>
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  
+                </a>
+              </div>
+        </div>
+    -->
+ <!--   
+        <h1 class="text-center text-danger mt-3">DATA DE INICIO</h1>
+        <p class="text-center text-white fs-5"><i class="bi bi-alarm"></i> 5 maio, 18:00</p>
+        <h1 class="text-center text-danger">PREMIAÇAO</h1>
+        <p class="text-center text-white fs-5"><i class="bi bi-award"></i> 4035 RP para cada integrante do time</p>
+-->
+        <div class="bg-dark text-white mt-5">
+            <div class="p-3">
+            Sobre
             </div>
             <div class="card-body">
-                <ul class="card-text">
-                    <li>
-                        O evento será realizado no espaço da Universidade UNIFUCAMP cujo endereço é “Av. Brasil Oeste, s/n - Jardim Zenith II, Monte Carmelo - MG, 38500-000".
-                    </li>
-                    <li>
-                        Data e horário de início do evento será nos dias 05/06/2023 às 19 horas (noite) às 22 horas (noite) e 06/06/2023 às 18 horas (noite) às 22 horas (noite)
-                    </li>
-                    <li>
-                        Local: Sala 02 de informática e Anfiteatro, ambos os dias os locais serão utilizados.
-                    </li>
-                    <li>
-                        Os equipamentos serão disponibilizados pela Universidade (exceto fone de ouvido ou headset).
-                    </li>
-                    <li>
-                        São proibidos os itens: Proibido mochilas, Materiais metálicos (Exceto fones ou Headsets), Armas brancas ou Armas de fogo.
-                    </li>
-                    <li>
-                        A Universidade não irá disponibilizar transporte para as equipes.
-                    </li>
-                    <li>
-                        A universidade irá disponibilizar equipamentos de informática e também segurança a todos presentes.
-                    </li>
+                <ul class="card-text" style="list-style: none;">
+                    <div>Links</div>
+                    <li><a href="suportegamingarena@gmail.com" style="text-decoration: none; color: rgb(117, 117, 127);">suporte</a></li>
+                    <li><a href="https://www.unifucamp.edu.br" style="text-decoration: none; color: rgb(117, 117, 127);">Quem somos</a></li>
+                    <li><a href="https://www.instagram.com/unifucampgaming_arena/" style="text-decoration: none; color: rgb(117, 117, 127);">Instagram</a></li>
                 </ul>
             </div>
-          </div>
-    </div>
-</div>
+        </div>
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 <script src="main.js"></script>
